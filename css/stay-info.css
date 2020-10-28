@@ -1,0 +1,112 @@
+#container-info {
+    max-width: 1300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.info {
+    text-align: center;
+}
+
+.info_ {
+    margin: 36px;
+}
+
+.small-img {
+    height: 225px;
+    width: 247px;
+    padding-left: 10px;
+}
+
+#container-info img {
+    border-radius: 20px;
+}
+
+#container-info .img-2 {
+    position: absolute;
+    top: 17.5% - 36px;
+    padding-left: 10px;
+}
+
+#save-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #FF385C;
+    outline: none;
+    border: none;
+}
+
+#share-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+}
+
+#save-btn:hover {
+    background-color: #00fffc;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+}
+
+#share-btn:hover {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+}
+
+#share-btn {
+    /* position: absolute;
+    text-align: center;
+    right: 23%; */
+    float: right;
+    margin-left: 10px;
+}
+
+#save-btn {
+    /* position: absolute;
+    text-align: center;
+    right: 17.5%; */
+    float: right;
+}
+
+#hr-desc {
+    width: 50%;
+    float: left;
+}
+
+.fa-home, .fa-broom, .fa-calendar-times, .fa-fingerprint {
+    font-size: 30px;
+}
+
+#contact {
+    color: black;
+    font-weight: bold;
+    padding: 20px !important;
+    font-size: 18px;
+}
+
+#description {
+    padding: 25px;
+}
+
+#more-places {
+    margin: 0 auto;
+    padding: none !important;
+}
+
+.products {
+    margin-top: -80px;
+}
+
+#more-places > h3{
+    text-align: center;
+    margin: 0px;
+}

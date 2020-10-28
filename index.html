@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/signUp-signIn.css" rel="stylesheet" type="text/css">
+    <script src="/js/data.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/912a2064fa.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section id="header">
+        <div id="nav">
+            <a href="index.html">
+                <img src="/images/background/Igloo_Logo.svg" alt="logo" id="logo">
+            </a>
+
+            <a href="#sign-in" class="nav-links" onclick="document.getElementById('sign-in').style.display='block'"
+                style="width:auto;">Log In</a>
+            <a href="#sign-up" class="nav-links" onclick="document.getElementById('sign-up').style.display='block'"
+                style="width:auto;">Sign Up</a>
+
+            <a href="#" class="nav-links">Help</a>
+            <a href="#" id="host-link">Become a host</a>
+        </div>
+        <div id="welcome-text-nav">
+            <p id="welcome-text">Welcome Home</p>
+            <p id="welcome-under-text">Rent unique places to stay from local hosts in 190+ contries.</p>
+            <a href="#guide" id="how-it-works">How It Works</a>
+        </div>
+        <div id="search-bar">
+            <div id="_search">
+                <form>
+                    <ul>
+                        <li>
+                            <label for="destinations-select">Where are you going?</label><br>
+                            <select name="destinations" id="destinations-select" class="select-to-search">
+                                <option value="">Destiantion</option>
+                                <option value="Toronto">Toronto</option>
+                                <option value="Quebec">Quebec</option>
+                                <option value="Vancouver">Vancouver</option>
+                                <option value="Montreal">Montreal</option>
+                                <option value="Alberta">Alberta</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="check-in">Check in</label><br>
+                            <input type="text" name="check-in" id="check-in" placeholder="Add dates"
+                                onfocus="(this.type='date')" class="select-to-search" />
+                        </li>
+                        <li>
+                            <label for="checkout">Check out</label><br>
+                            <input type="text" name="checkout" id="checkout" placeholder="Add dates"
+                                onfocus="(this.type='date')" class="select-to-search" />
+                        </li>
+                        <li>
+                            <label for="guests-select">Guests</label><br>
+                            <select name="guests" id="guests-select" class="select-to-search">
+                                <option value="1">1 guest</option>
+                                <option value="2">2 guests</option>
+                                <option value="3">3 guests</option>
+                                <option value="4">4 guests</option>
+                                <option value="5">5 guests</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <button class="btn btn-search-submit"><i class="fas fa-search-location"></i>Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="sign-up" class="modal">
+            <span onclick="document.getElementById('sign-up').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <form class="modal-content" action="/registration.html">
+                <div class="container">
+                    <h1>Sign Up</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+                    <label for="email"><b>Email address</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,12}$"
+                        oninvalid="setCustomValidity('Please enter at least 1 upper case, 1 lower case and 1 digit, and the password from 6-12 character')" />
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat"
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,12}$"
+                        oninvalid="setCustomValidity('Please enter at least 1 upper case, 1 lower case and 1 digit, and the password from 6-12 character')" />
+
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+                    </p>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('sign-up').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+
+                    <div>
+                        <p>or</p>
+                        <div class="third-sign-up"><img src="/images/background/Email-Logo.png" /><a
+                                href="#sign-up-with-email">
+                                <p class="words">Sign up with Email</p>
+                            </a></div>
+                        <div class="third-sign-up"><img src="/images/background/Google-Logo.png" /><a
+                                href="#sign-up-with-google">
+                                <p>Sign up with Google</p>
+                            </a></div>
+                        <div class="third-sign-up"><img src="/images/background/Facebook-Logo.png" /><a
+                                href="#sign-up-with-facebook">
+                                <p>Sign up with Facebook</p>
+                            </a></div>
+                        <div class="third-sign-up"><img src="/images/background/Apple-Logo.png" /><a
+                                href="#sign-up-with-apple">
+                                <p>Sign up with Apple</p>
+                            </a></div>
+                    </div>
+                    <div class="login-in-sign-up">Already have an account? <a href="#sign-in"
+                            onclick="document.getElementById('sign-up').style.display='none'; document.getElementById('sign-in').style.display='block'">Log
+                            in</a></div>
+                </div>
+            </form>
+        </div>
+
+        <div id="sign-in" class="modal">
+            <span onclick="document.getElementById('sign-in').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+                <div class="container">
+                    <h1>Sign In</h1>
+                    <hr>
+                    <label for="email"><b>Email address</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('sign-in').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign In</button>
+                    </div>
+
+                    <div>
+                        <p>or</p>
+
+                        <div class="third-sign-up"><img src="/images/background/Email-Logo.png" />
+                            <p class="words">Sign in with Email</p>
+                        </div>
+                        <div class="third-sign-up"><img src="/images/background/Google-Logo.png" />
+                            <p>Sign in with Google</p>
+                        </div>
+                        <div class="third-sign-up"><img src="/images/background/Facebook-Logo.png" />
+                            <p>Sign in with Facebook</p>
+                        </div>
+                        <div class="third-sign-up"><img src="/images/background/Apple-Logo.png" />
+                            <p>Sign in with Apple</p>
+                        </div>
+                    </div>
+                    <div class="login-in-sign-up">Don't have an account yet? <a href="#"
+                            onclick="document.getElementById('sign-in').style.display='none'; document.getElementById('sign-up').style.display='block'">Sign
+                            Up</a></div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="explore">
+        <h3>Explore all types of unique stays</h3>
+        <div class="unique">
+            <a href="">
+                <div class="content-explore"><img src="/images/background/tree-house.svg" alt="Tree house">
+                    <p>Tree houses</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="content-explore"><img src="/images/background/house.svg" alt="">
+                    <p>Floating homes</p>
+                </div>
+            </a><a href="">
+                <div class="content-explore"><img src="/images/background/beach-hut.svg" alt="Huts icon">
+                    <p>Huts</p>
+                </div>
+            </a><a href="">
+                <div class="content-explore"><img src="/images/background/castle.svg" alt="Castles icon">
+                    <p>Castles</p>
+                </div>
+            </a><a href="">
+                <div class="content-explore"><img src="/images/background/sustainable.svg" alt="">
+                    <p>Barns</p>
+                </div>
+            </a><a href="">
+                <div class="content-explore"><img src="/images/background/home.svg" alt="">
+                    <p>Tiny houses</p>
+                </div>
+            </a><a href="">
+                <div class="content-explore"><img src="/images/background/farm-house.svg" alt="">
+                    <p>Farm stays</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <hr id="prod-hr">
+    <section class="products">
+        <div class="list-products"></div>
+    </section>
+    <hr id="promo-hr">
+    <section class="reasons">
+        <h1 class="section-title">Reasons to choose Igloo</h1>
+        <div class="features">
+            <div class="feature">
+                <img src="/images/background/place.svg" alt="Location icon" class="feature-img">
+                <h3 class="feature-title">Live like a local</h3>
+                <p class="feature-desc">
+                    Igloo are immersed in neighborhoods, condos, and townhomes. They’re along beaches, canals, Main
+                    Streets, main attractions, or they can be secluded.
+                </p>
+            </div>
+            <div class="feature">
+                <img src="/images/background/flexibility.svg" alt="Flexibility icon" class="feature-img">
+                <h3 class="feature-title">Flexibility</h3>
+                <p class="feature-desc">
+                    Many hotels are strict about their check-in or check-out policy and have minimal ability to
+                    accommodate those wishes. So far, every Airbnb we’ve stayed in has been able to work with our
+                    schedules.
+                </p>
+                <p>We understand that there are times this may not work out, but it has been nice to check in at 9:00 in
+                    the morning, shower and get ready, leave our bags, and hit the streets running. The cancellation
+                    policy on an Airbnb can also be negotiated.</p>
+            </div>
+            <div class="feature">
+                <img src="/images/background/toiletries.svg" alt="Amenities icon" class="feature-img">
+                <h3 class="feature-title">Amenities</h3>
+                <p class="feature-desc">
+                    Speaking from booking an entire place on Airbnb, the amenities that are included can be priceless.
+                    Having a full kitchen at your disposal is awesome! It’s a great way to save money if you’d like to
+                    have meal or two in. Especially breakfast.
+                </p>
+                <p>
+                    You can go to the market and stock up on waters, wine, and snacks…and more wine. Also, most have a
+                    washer and dryer. This may come in handy if you have younger kids, or if you don’t want to bring
+                    home a stockpile of dirty laundry.
+                </p>
+            </div>
+            <div class="feature">
+                <img src="/images/background/insurance.svg" alt="Insurance icon" class="feature-img">
+                <h3 class="feature-title">Every trip is covered by Igloo</h3>
+                <p class="feature-desc">
+                    Experience issues? Unexpected accidents during your trip? Our Refund Policy ensures
+                    that you don't have to pay for our mistakes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <footer id="footer">
+            <div id="_foot">
+                <img src="/images/background/Igloo_Logo.gif" class="logo-footer" alt="Igloo_Logo">
+                <ul>
+                    <li><a href="#report">Rent Report</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#terms">Terms</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#">Français (FR)</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="footer-content">
+                <div class="col-1">
+                    <h3>Popular Search</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Apartments & Condos near me</a>
+                        </li>
+                        <li>
+                            <a href="#">Apartments near me</a>
+                        </li>
+                        <li>
+                            <a href="#">Condos near me</a>
+                        </li>
+                        <li>
+                            <a href="#">Houses near me</a>
+                        </li>
+                        <li>
+                            <a href="#">Rooms near me</a>
+                        </li>
+                        <li>
+                            <a href="#">All rentals near me</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3>LandLords</h3>
+                    <ul>
+                        <li><a href="#" class="post-for-free">Post for Free</a></li>
+                        <li><a href="#">My Listings</a></li>
+                        <li><a href="#">Email Preferences</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3>Rental Apps</h3>
+                    <ul>
+                        <li><a href="#appstore-download-app"><img src="/images/background/app-store.svg" alt=""></a>
+                        </li>
+                        <li><a href="#google-play-download-app"><img src="/images/background/google-play-badge.png"
+                                    alt="" class="app-link"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h3>Follow Us</h3>
+                    <a href="#Facebook" class="fa fa-facebook" id="fb"></a>
+                    <a href="#Instagram" class="fa fa-instagram" id="ins"></a>
+                    <a href="#Twitter" class="fa fa-twitter" id="tw"></a>
+                    <a href="#Youtube" class="fa fa-youtube" id="yt"></a>
+                    <a href="#Google" class="fa fa-google" id="gg"></a>
+                    <a href="#LinkedIn" class="fa fa-linkedin" id="lin"></a>
+                </div>
+            </div>
+            <div class="background-footer"></div>
+        </footer>
+    </section>
+</body>
+
+<script>
+    document.querySelector('.list-products').innerHTML = ads
+        .map(
+            (item, index) =>
+                `<div class="product" index=${index}>                     
+                <div class="img-product">
+                    <a href="#"> <img src='${item.image}' class="product-img" onclick="Home()"/></a>
+                </div>
+                <div>
+                    <h3>${item.name}</h3>
+                    <p>${item.desc}</p>
+                </div>
+             </div>`
+        )
+        .join('');
+
+    // document.querySelector('.list-products').innerHTML = house_list
+    //     .map(
+    //         (item, index) =>
+    //             `<div class="product" index=${index}>                     
+    //             <div class="img-product">
+    //                 <a href="#"> <img src='${item.image}'/></a>
+    //             </div>
+    //             <div>
+    //                 <p>${item.desc} · ${item.city} · ${item.province}, ${item.country}</p>
+    //                 <p>${item.view}</p>
+    //                 <p>${item.guests} · ${item.bedrooms} · ${item.beds} · ${item.baths}
+    //                 <p>${item.price} CAD/night</p>
+    //             </div>
+    //             <button class="check-available">Check availablity</button>
+    //          </div>`
+    //     )
+    //     .join('');
+
+    Home = () => {
+        let home = (document.querySelector('.list-products').innerHTML = house_list
+            .map(
+                (item, index) =>
+                    `<div class="product" index=${index}>                     
+                        <div class="img-product">
+                            <a href="stay-info.html"> <img src='${item.image}'/></a>
+                        </div>
+                        <i class="fa fa-star" aria-hidden="true"></i><span>${item.point}(${item.rate})</span>
+                        <div>
+                            <p style="font-size: 19px; font-weight: bold;">${item.desc} · ${item.city} · ${item.province}, ${item.country}</p>
+                            <p style="font-size: 16px; font-weight: bold;">${item.view}</p>
+                            <p>${item.guests} · ${item.bedrooms} · ${item.beds} · ${item.baths}
+                            <p style="color: #999999;">${item.price} CAD/night</p>
+                        </div>
+                        <button class="check-available">Check availablity</button>
+                    </div>`
+            )
+            .join(''));
+    };
+
+
+    var modal = document.getElementById('sign-up');
+    var modal_ = document.getElementById('sign-in');
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        if (event.target == modal_) {
+            modal_.style.display = "none";
+        }
+    }
+</script>
+
+</html>

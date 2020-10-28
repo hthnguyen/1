@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/signUp-signIn.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/stay-info.css" rel="stylesheet" type="text/css">
+
+    <script src="/js/script.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/912a2064fa.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section id="header" style="background-image: none; background-color: #1CC6CD; height: 65px;">
+        <div id="nav">
+            <a href="index.html">
+                <img src="/images/background/Igloo_Logo.svg" alt="logo" id="logo">
+            </a>
+            <a href="#" class="nav-links" onclick="document.getElementById('sign-in').style.display='block'"
+                style="width:auto;">Log In</a>
+            <a href="#" class="nav-links" onclick="document.getElementById('sign-up').style.display='block'"
+                style="width:auto;">Sign Up</a>
+
+            <a href="#" class="nav-links">Help</a>
+            <a href="#" id="host-link">Become a host</a>
+        </div>
+    </section>
+    <section>
+        <div id="sign-up" class="modal">
+            <span onclick="document.getElementById('sign-up').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <form class="modal-content" action="">
+                <div class="container">
+                    <h1>Sign Up</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+                    <label for="email"><b>Email address</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+                    </p>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('sign-up').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+
+                    <div>
+                        <p>or</p>
+                        <div class="third-sign-up"><img src="/images/background/Email-Logo.png" /><a href="#">
+                                <p class="words">Sign up with Email</p>
+                            </a></div>
+                        <div class="third-sign-up"><img src="/images/background/Google-Logo.png" /><a href="#">
+                                <p>Sign up with Google</p>
+                            </a></div>
+                        <div class="third-sign-up"><img src="/images/background/Facebook-Logo.png" /><a href="#">
+                                <p>Sign up with Facebook</p>
+                            </a></div>
+                        <div class="third-sign-up"><img src="/images/background/Apple-Logo.png" /><a href="#">
+                                <p>Sign up with Apple</p>
+                            </a></div>
+                    </div>
+                    <div class="login-in-sign-up">Already have an account? <a href="#"
+                            onclick="document.getElementById('sign-in').style.display='block'">Log in</a></div>
+                </div>
+            </form>
+        </div>
+
+        <div id="sign-in" class="modal">
+            <span onclick="document.getElementById('sign-in').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <form class="modal-content" action="">
+                <div class="container">
+                    <h1>Sign In</h1>
+                    <hr>
+                    <label for="email"><b>Email address</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('sign-in').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign In</button>
+                    </div>
+
+                    <div>
+                        <p>or</p>
+
+                        <div class="third-sign-up"><img src="/images/background/Email-Logo.png" />
+                            <p class="words">Sign in with Email</p>
+                        </div>
+                        <div class="third-sign-up"><img src="/images/background/Google-Logo.png" />
+                            <p>Sign in with Google</p>
+                        </div>
+                        <div class="third-sign-up"><img src="/images/background/Facebook-Logo.png" />
+                            <p>Sign in with Facebook</p>
+                        </div>
+                        <div class="third-sign-up"><img src="/images/background/Apple-Logo.png" />
+                            <p>Sign in with Apple</p>
+                        </div>
+                    </div>
+                    <div class="login-in-sign-up">Don't have an account yet? <a href="#"
+                            onclick="document.getElementById('sign-up')" style="width:auto;">Sign Up</a></div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <h3>Congratulations! Your registration has been successfully processed.</h3>
+        <h4>Click <a href="index.html">here</a> to come back to Home page</h4>
+    </section>
+
+
+
+    <section>
+        <footer id="footer">
+            <div id="_foot">
+                <img src="/images/background/Igloo_Logo.gif" class="logo-footer" alt="Igloo_Logo">
+                <ul>
+                    <li><a href="#">Rent Report</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Français (FR)</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="footer-content">
+                <div class="col-1">
+                    <h3>Popular Search</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Apartments & Condos near me</a>
+                        </li>
+                        <li>
+                            <a href="#">Apartments near me</a>
+                        </li>
+                        <li>
+                            <a href="#">Condos near me</a>
+                        </li>
+                        <li>
+                            <a href="#">Houses near me</a>
+                        </li>
+                        <li>
+                            <a href="#">Rooms near me</a>
+                        </li>
+                        <li>
+                            <a href="#">All rentals near me</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3>LandLords</h3>
+                    <ul>
+                        <li><a href="#" class="post-for-free">Post for Free</a></li>
+                        <li><a href="#">My Listings</a></li>
+                        <li><a href="#">Email Preferences</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3>Rental Apps</h3>
+                    <ul>
+                        <li><a href="#"><img src="/images/background/app-store.svg" alt=""></a></li>
+                        <li><a href="#"><img src="/images/background/google-play-badge.png" alt="" class="app-link"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h3>Follow Us</h3>
+                    <a href="#" class="fa fa-facebook" id="fb"></a>
+                    <a href="#" class="fa fa-instagram" id="ins"></a>
+                    <a href="#" class="fa fa-twitter" id="tw"></a>
+                    <a href="#" class="fa fa-youtube" id="yt"></a>
+                    <a href="#" class="fa fa-google" id="gg"></a>
+                    <a href="#" class="fa fa-linkedin" id="lin"></a>
+
+
+                </div>
+            </div>
+            <div class="background-footer"></div>
+        </footer>
+    </section>
+</body>
+
+<script>
+
+var modal = document.getElementById('sign-up');
+    var modal_ = document.getElementById('sign-in');
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        if (event.target == modal_) {
+            modal_.style.display = "none";
+        }
+    }
+</script>
+</html>
