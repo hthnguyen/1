@@ -20,7 +20,6 @@ console.log("Express HTTP server listening on: " + HTTP_PORT);
 app.use(express.static(path.join(__dirname, 'public')));
 
 //set up route to my default page
-app.get('/', (req, res) => res.render('public/index'))
 app.get("/",(req,res)=>{
     res.sendFile(path.join(__dirname,"public/index.html"));
 });
