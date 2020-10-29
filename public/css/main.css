@@ -180,6 +180,20 @@ body {
     border-radius: 5px;
 }
 
+#check-in, #check-out{
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+#check-in:active, #check-out:active{
+    height: 20px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 5px;
+}
+  
 /* Products */
 
 .product {
@@ -220,6 +234,7 @@ body {
 .check-available:hover {
     background-color: #FF385C;
     color: white;
+    cursor: pointer;
 }
 
 .check-available:active {
@@ -370,6 +385,7 @@ body {
     background: #d6249f;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    cursor: pointer;
 }
 
 #fb {
@@ -380,6 +396,7 @@ body {
 
 #fb:hover {
     background-color: #3B5998;
+    cursor: pointer;
 }
 
 #tw {
@@ -391,6 +408,7 @@ body {
 #tw:hover {
     color: white;
     background-color: #08a0e9;
+    cursor: pointer;
 }
 
 #yt {
@@ -402,6 +420,7 @@ body {
 #yt:hover {
     color: #E62117;
     background-color: white;
+    cursor: pointer;
 }
 
 #gg {
@@ -412,6 +431,7 @@ body {
 
 #gg:hover {
     background-color: #DB4437;
+    cursor: pointer;
 }
 
 #lin {
@@ -422,6 +442,7 @@ body {
 
 #lin:hover {
     background-color: #0e76a8;
+    cursor: pointer;
 }
 
 /* promotion */

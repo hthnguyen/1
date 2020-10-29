@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/main.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/signUp-signIn.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/stay-info.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/css/signUp-signIn.css" type="text/css">
+    <link rel="stylesheet" href="/css/stay-info.css" type="text/css">
 
     <script src="/js/data.js"></script>
 
@@ -42,13 +42,17 @@
                     <p>Please fill in this form to create an account.</p>
                     <hr>
                     <label for="email"><b>Email address</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required >
+                    <input type="text" placeholder="Enter Email" name="email" required>
 
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,12}$" oninvalid="setCustomValidity('Please enter at least 1 upper case, 1 lower case and 1 digit, and the password from 6-12 character')" />
+                    <input type="password" placeholder="Enter Password" name="psw" required
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,12}$"
+                        oninvalid="setCustomValidity('Please enter at least 1 upper case, 1 lower case and 1 digit, and the password from 6-12 character')" />
 
                     <label for="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" placeholder="Repeat Password" name="psw-repeat" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,12}$" oninvalid="setCustomValidity('Please enter at least 1 upper case, 1 lower case and 1 digit, and the password from 6-12 character')" /> 
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,12}$"
+                        oninvalid="setCustomValidity('Please enter at least 1 upper case, 1 lower case and 1 digit, and the password from 6-12 character')" />
 
                     <label>
                         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
@@ -65,21 +69,26 @@
 
                     <div>
                         <p>or</p>
-                        <div class="third-sign-up"><img src="/images/background/Email-Logo.png" /><a href="#sign-up-with-email">
+                        <div class="third-sign-up"><img src="/images/background/Email-Logo.png" /><a
+                                href="#sign-up-with-email">
                                 <p class="words">Sign up with Email</p>
                             </a></div>
-                        <div class="third-sign-up"><img src="/images/background/Google-Logo.png" /><a href="#sign-up-with-google">
+                        <div class="third-sign-up"><img src="/images/background/Google-Logo.png" /><a
+                                href="#sign-up-with-google">
                                 <p>Sign up with Google</p>
                             </a></div>
-                        <div class="third-sign-up"><img src="/images/background/Facebook-Logo.png" /><a href="#sign-up-with-facebook">
+                        <div class="third-sign-up"><img src="/images/background/Facebook-Logo.png" /><a
+                                href="#sign-up-with-facebook">
                                 <p>Sign up with Facebook</p>
                             </a></div>
-                        <div class="third-sign-up"><img src="/images/background/Apple-Logo.png" /><a href="#sign-up-with-apple">
+                        <div class="third-sign-up"><img src="/images/background/Apple-Logo.png" /><a
+                                href="#sign-up-with-apple">
                                 <p>Sign up with Apple</p>
                             </a></div>
                     </div>
                     <div class="login-in-sign-up">Already have an account? <a href="#sign-in"
-                        onclick="document.getElementById('sign-up').style.display='none'; document.getElementById('sign-in').style.display='block'">Log in</a></div>
+                            onclick="document.getElementById('sign-up').style.display='none'; document.getElementById('sign-in').style.display='block'">Log
+                            in</a></div>
                 </div>
             </form>
         </div>
@@ -124,7 +133,8 @@
                         </div>
                     </div>
                     <div class="login-in-sign-up">Don't have an account yet? <a href="#"
-                        onclick="document.getElementById('sign-in').style.display='none'; document.getElementById('sign-up').style.display='block'">Sign Up</a></div>
+                            onclick="document.getElementById('sign-in').style.display='none'; document.getElementById('sign-up').style.display='block'">Sign
+                            Up</a></div>
                 </div>
             </form>
         </div>
@@ -160,48 +170,123 @@
                     src="https://a0.muscache.com/im/pictures/11b13be2-266f-4217-a7b8-b809bed26f7d.jpg?im_w=720"
                     alt="img-5">
             </div>
-
-            <div id="description">
-                <h3>Entire bungalow hosted by Edwin</h3>
-                <span>6 guests · 4 bedrooms · 5 beds · 2 baths</span>
-                <br>
-                <hr id="hr-desc">
-                <br>
-                <div>
-                    <h3><i class="fas fa-home"></i>&nbsp;&nbsp;Entire home</h3>
-                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span>You’ll have the bungalow to yourself.</span>
+            <div class="desc-book">
+                <div id="description">
+                    <h3>Entire bungalow hosted by Edwin</h3>
+                    <span>6 guests · 4 bedrooms · 5 beds · 2 baths</span>
+                    <br>
+                    <hr id="hr-desc">
+                    <br>
+                    <div>
+                        <h3><img src="/images/background/house-small.svg" alt="house-small"
+                                class="icon-small">&nbsp;&nbsp;Entire home</h3>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span>You’ll have the bungalow to yourself.</span>
+                    </div>
+                    <div>
+                        <h3><img src="/images/background/cleaning.svg" alt="cleaning-icon"
+                                class="icon-small">&nbsp;&nbsp;Enhanced Clean</h3>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span>This host committed to Airbnb's 5-step enhanced cleaning process. <a href="#">Learn
+                                more</a></span>
+                    </div>
+                    <div>
+                        <h3><img src="/images/background/fingerprint-scan.svg" alt="fingerprint-scan"
+                                class="icon-small">&nbsp;&nbsp;Self check-in</h3>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span>Check yourself in with the smartlock.</a></span>
+                    </div>
+                    <div>
+                        <h3><img src="/images/background/policy.svg" alt="policy" class="icon-small">&nbsp;&nbsp;Cancel
+                            policy</h3>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span> Add your trip dates to get the cancellation details for this stay.</a></span>
+                    </div>
+                    <hr id="hr-desc">
+                    <br>
+                    <div style="width: 48%; font-size: 16px; margin-bottom: 25px;">My house located the corner of Murray
+                        St.
+                        and Wentworth Ave. You just walk along on Murray St 13 minutes to the Falls, 7 minutes to
+                        Fallsview
+                        Casino, Skylon Tower, Fallsview kids zone playground, restaurants, nightclub Dragonfly and Club
+                        7.
+                        Only 2 main streets away, my place is located in a safe and quiet neighborhood. My cottage
+                        provides
+                        free Wifi, free local stream TV and free Netflix. My sunroom is has a fireplace stove for relax
+                        and
+                        chill. Just leave your cars and walk to the Falls.</div>
+                    <a href="#" id="contact">Contact host</a>
+                    <hr id="hr-desc">
                 </div>
                 <div>
-                    <h3><i class="fas fa-broom"></i>&nbsp;&nbsp;Enhanced Clean</h3>
-                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span>This host committed to Airbnb's 5-step enhanced cleaning process. <a href="#">Learn
-                            more</a></span>
+                    <form action="" class="table-check">
+                        <table class="tr-td">
+                            <tr>
+                                <td colspan="2">
+                                    <p>Add dates for prices
+                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                        <span class="fa fa-star" aria-hidden="true"></span><span>4.5/5(68)</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="check-in">Check in</label><br>
+                                    <input type="text" name="check-in" id="check-in" placeholder="Add dates"
+                                        onfocus="(this.type='date')" class="select-to-search" />
+                                </td>
+                                <td>
+                                    <label for="check-out">Check out</label><br>
+                                    <input type="text" name="check-out" id="check-out" placeholder="Add dates"
+                                        onfocus="(this.type='date')" class="select-to-search" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button class="check-button">Check availablity</button></td>
+                            </tr>
+                        </table>
+                    </form>
                 </div>
-                <div>
-                    <h3><i class="fas fa-fingerprint"></i>&nbsp;&nbsp;Self check-in</h3>
-                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span>Check yourself in with the smartlock.</a></span>
-                </div>
-                <div>
-                    <h3><i class="far fa-calendar-times"></i>&nbsp;&nbsp;Cancel policy</h3>
-                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span> Add your trip dates to get the cancellation details for this stay.</a></span>
-                </div>
-                <hr id="hr-desc">
-                <br>
-                <div style="width: 48%; font-size: 16px; margin-bottom: 25px;">My house located the corner of Murray St.
-                    and Wentworth Ave. You just walk along on Murray St 13 minutes to the Falls, 7 minutes to Fallsview
-                    Casino, Skylon Tower, Fallsview kids zone playground, restaurants, nightclub Dragonfly and Club 7.
-                    Only 2 main streets away, my place is located in a safe and quiet neighborhood. My cottage provides
-                    free Wifi, free local stream TV and free Netflix. My sunroom is has a fireplace stove for relax and
-                    chill. Just leave your cars and walk to the Falls.</div>
-                <a href="#" id="contact">Contact host</a>
-                <br>
             </div>
+            <div class="sleep-div">
+                <h3>Sleeping arrangements</h3>
+                <div class="sleep-content">
+                    <img src="/images/background/sleeping.svg" alt="sleeping-icon"
+                        style="height: 50px; border-radius: 0px !important;">
+                    <img src="/images/background/reading.svg" alt="reading-icon"
+                        style="height: 40px; border-radius: 0px !important;">
+                    <h4>Bedroom 1</h4>
+                    <p>1 queen bed, 1 couch</p>
+                </div>
+                <div class="amenities">
+                    <hr id="hr-desc">
+                    <br>
+                    <div class="amenities">
+                        <ul>
+                            <li><img src="/images/background/first-aid-kit.svg" alt="first-aid-kit-icon" class="amenities-img"> First aid kit</li>
+                            <li><img src="/images/background/laptop.svg" alt="Laptop-friendly" class="amenities-img"> Laptop-friendly workspace</li>
+                            <li><img src="/images/background/door.svg" alt="Private entrance" class="amenities-img"> Private entrance</li>
+                            <li><img src="/images/background/smoke-detector.svg" alt="smoke-detector" class="amenities-img"> Smoke alarm</li>
+                            <li><img src="/images/background/coffee-maker.svg" alt="Coffee marker" class="amenities-img"> Coffee marker</li>
+                        </ul>
+                        <ul>
+                            <li><img src="/images/background/parking.svg" alt="parking" class="amenities-img"> Free parking on permises</li>
+                            <li><img src="/images/background/toiletries.svg" alt="Essentials" class="amenities-img"> Essentials</li>
+                            <li><img src="/images/background/kitchen.svg" alt="kitchen" class="amenities-img"> Kitchen</li>
+                            <li><img src="/images/background/fireplace.svg" alt="fireplace" class="amenities-img"> Indoor fireplace</li>
+                            <li><img src="/images/background/wifi.svg" alt="Wifi" class="amenities-img"> Wifi</li>
+                        </ul>
+                        <button>Show all 23 amenities</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            
         </div>
         <div id="more-places">
             <h3>More places to stay</h3>
+            <br>
             <div class="products">
                 <div class="list-products"></div>
             </div>
@@ -211,6 +296,53 @@
         </div>
         <div>
 
+        </div>
+    </section>
+    <section class="reasons">
+        <h1 class="section-title">Reasons to choose Igloo</h1>
+        <div class="features">
+            <div class="feature">
+                <img src="/images/background/place.svg" alt="Location icon" class="feature-img">
+                <h3 class="feature-title">Live like a local</h3>
+                <p class="feature-desc">
+                    Igloo are immersed in neighborhoods, condos, and townhomes. They’re along beaches, canals, main
+                    streets, main attractions, or they can be secluded.
+                </p>
+            </div>
+            <div class="feature">
+                <img src="/images/background/flexibility.svg" alt="Flexibility icon" class="feature-img">
+                <h3 class="feature-title">Flexibility</h3>
+                <p class="feature-desc">
+                    Many hotels are strict about their check-in or check-out policy and have minimal ability to
+                    accommodate those wishes. So far, every Igloo we’ve stayed in has been able to work with our
+                    schedules.
+                </p>
+                <p>We understand that there are times this may not work out, but it has been nice to check in at 9:00 in
+                    the morning, shower and get ready, leave our bags, and hit the streets running. The cancellation
+                    policy on an Igloo can also be negotiated.</p>
+            </div>
+            <div class="feature">
+                <img src="/images/background/toiletries.svg" alt="Amenities icon" class="feature-img">
+                <h3 class="feature-title">Amenities</h3>
+                <p class="feature-desc">
+                    Speaking from booking an entire place on Igloo, the amenities that are included can be priceless.
+                    Having a full kitchen at your disposal is awesome! It’s a great way to save money if you’d like to
+                    have meal or two in. Especially breakfast.
+                </p>
+                <p>
+                    You can go to the market and stock up on waters, wine, and snacks…and more wine. Also, most have a
+                    washer and dryer. This may come in handy if you have younger kids, or if you don’t want to bring
+                    home a stockpile of dirty laundry.
+                </p>
+            </div>
+            <div class="feature">
+                <img src="/images/background/insurance.svg" alt="Insurance icon" class="feature-img">
+                <h3 class="feature-title">Every trip is covered by Igloo</h3>
+                <p class="feature-desc">
+                    Experience issues? Unexpected accidents during your trip? Our Refund Policy ensures
+                    that you don't have to pay for our mistakes.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -301,7 +433,7 @@
                     </div>
                     <button class="check-available">Check availablity</button>
                 </div>`
-            ).join('');
+        ).join('');
 
     Home = () => {
         let home = (document.querySelector('.list-products').innerHTML = house_list
@@ -319,7 +451,7 @@
                             </div>
                         <button class="check-available">Check availablity</button>
                     </div>`
-                ).join(''));
+            ).join(''));
     };
 
     var modal = document.getElementById('sign-up');
