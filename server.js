@@ -10,14 +10,14 @@ app = express();
 //     console.log("The server is running on http://localhost:" + app.get('port'));    
 // })
 
-const HTTP_PORT = process.env.HTTP_PORT || 8081;
+const HTTP_PORT = process.env.HTTP_PORT || 8080;
 
 //welcome message
 function onHTTPSTART(){
 console.log("Express HTTP server listening on: " + HTTP_PORT);
 }
 
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // //set up route to my default page
 // app.get("/",(req,res)=>{
