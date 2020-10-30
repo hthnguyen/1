@@ -88,13 +88,14 @@
                     <input type="text" placeholder="Enter Email" name="email" required>
 
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-                        <!-- pattern=""
-                        oninvalid="setCustomValidity('Please enter at least 1 upper case, 1 lower case and 1 digit, and the password from 6-12 character')" /> -->
+                    <input type="password" placeholder="Enter Password" name="psw" required
+                        pattern="{6,12}[a-zA-Z0-9]"
+                        oninvalid="setCustomValidity('Please enter at least 1 upper case, 1 lower case and 1 digit, and the password from 6-12 character')" />
 
                     <label for="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" placeholder="Repeat Password" name="psw-repeat">
-                        <!-- pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,12}$"  oninvalid="setCustomValidity('Please enter at least 1 upper case, 1 lower case and 1 digit, and the password from 6-12 character')"  -->
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat"
+                        pattern="{6,12}[a-zA-Z0-9]"  
+                        oninvalid="setCustomValidity('Please enter at least 1 upper case, 1 lower case and 1 digit, and the password from 6-12 character')" />
                      
 
                     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
