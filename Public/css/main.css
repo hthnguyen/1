@@ -229,6 +229,9 @@ body {
     border-radius: 25px;
     border: none;
     outline: none;
+    background-color: #FF385C;
+    color: white;
+    cursor: pointer;
 }
 
 .check-available:hover {
@@ -528,4 +531,11 @@ body {
     padding-top: 30px;
     height: 108px;
     width: 108px;
+}
+
+
+/* register */
+.body-content{
+    max-width: 1300px;
+    margin: 0 auto;
 }
