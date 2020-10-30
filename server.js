@@ -17,16 +17,16 @@ function onHTTPSTART(){
 console.log("Express HTTP server listening on: " + HTTP_PORT);
 }
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../WEB322')));
 
 //set up route to my default page
 app.get("/",(req,res)=>{
-    res.sendFile(path.join(__dirname,"public/index.html"));
+    res.sendFile(path.join(__dirname,"index.html"));
 });
 
 //set up route to my registration page
 app.get("/registration",(req,res)=>{
-    res.sendFile(path.join(__dirname,"public/registration.html"))
+    res.sendFile(path.join(__dirname,"registration.html"))
 });
 
 app.use((req,res)=>{
