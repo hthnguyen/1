@@ -10,7 +10,7 @@ function onHttpStart() {
   console.log("Express http server listening on: " + HTTP_PORT);
 }
 
-app.use(express.static(path.join(__dirname, '../WEB322')));
+app.use(express.static(path.join(__dirname, 'Public')));
 // setup a 'route' to listen on the default url path (http://localhost)
 app.get("/", function(req,res){
     res.sendFile(path.join(__dirname,"index.html"));
