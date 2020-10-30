@@ -1,0 +1,137 @@
+var house_list=[
+{
+    desc: 'Tiny House',
+    city: 'Toronto',
+    province: 'Ontario',
+    country: 'Canada',
+    guests: '2 guests',
+    bedrooms: '1 bedroom',
+    beds: '1 bed',
+    baths: '1 bath',
+    view: 'Sea view',
+    price: '169',
+    image: '/images/houses/house-1.jpg'
+},
+{
+    desc: 'Tiny House',
+    city: 'Toronto',
+    province: 'Ontario',
+    country: 'Canada',
+    guests: '2 guests',
+    bedrooms: '1 bedroom',
+    beds: '1 bed',
+    baths: '1 bath',
+    view: 'Sea view',
+    price: '169',
+    image: '/images/houses/house-1.jpg'
+},
+{
+    desc: 'Tiny House',
+    city: 'Toronto',
+    province: 'Ontario',
+    country: 'Canada',
+    guests: '2 guests',
+    bedrooms: '1 bedroom',
+    beds: '1 bed',
+    baths: '1 bath',
+    view: 'Sea view',
+    price: '169',
+    image: '/images/houses/house-1.jpg'
+},
+{
+    desc: 'Tiny House',
+    city: 'Toronto',
+    province: 'Ontario',
+    country: 'Canada',
+    guests: '2 guests',
+    bedrooms: '1 bedroom',
+    beds: '1 bed',
+    baths: '1 bath',
+    view: 'Sea view',
+    price: '169',
+    image: '/images/houses/house-1.jpg'
+},
+{
+    desc: 'Tiny House',
+    city: 'Toronto',
+    province: 'Ontario',
+    country: 'Canada',
+    guests: '2 guests',
+    bedrooms: '1 bedroom',
+    beds: '1 bed',
+    baths: '1 bath',
+    view: 'Sea view',
+    price: '169',
+    image: '/images/houses/house-1.jpg'
+},
+{
+    desc: 'Tiny House',
+    city: 'Toronto',
+    province: 'Ontario',
+    country: 'Canada',
+    guests: '2 guests',
+    bedrooms: '1 bedroom',
+    beds: '1 bed',
+    baths: '1 bath',
+    view: 'Sea view',
+    price: '169',
+    image: '/images/houses/house-1.jpg'
+},
+{
+    desc: 'Tiny House',
+    city: 'Toronto',
+    province: 'Ontario',
+    country: 'Canada',
+    guests: '2 guests',
+    bedrooms: '1 bedroom',
+    beds: '1 bed',
+    baths: '1 bath',
+    view: 'Sea view',
+    price: '169',
+    image: '/images/houses/house-1.jpg'
+},
+{
+    desc: 'Tiny House',
+    city: 'Toronto',
+    province: 'Ontario',
+    country: 'Canada',
+    guests: '2 guests',
+    bedrooms: '1 bedroom',
+    beds: '1 bed',
+    baths: '1 bath',
+    view: 'Sea view',
+    price: '169',
+    image: '/images/houses/house-1.jpg'
+},
+{
+    desc: 'Tiny House',
+    city: 'Toronto',
+    province: 'Ontario',
+    country: 'Canada',
+    guests: '2 guests',
+    bedrooms: '1 bedroom',
+    beds: '1 bed',
+    baths: '1 bath',
+    view: 'Sea view',
+    price: '169',
+    image: '/images/houses/house-1.jpg'
+}
+]
+
+var ads = [
+    {
+        name: 'Unique stays',
+        desc: 'Spaces that are more than just a place to sleep.',
+        image: '/images/houses/house-1.jpg'
+    },
+    {
+        name: 'Entire homes',
+        desc: 'Comfotable private places, with room for friends or family.',
+        image: '/images/houses/entire-home.png'
+    },
+    {
+        name: 'Tiny House',
+        desc: 'Tiny House',
+        image: '/images/houses/tiny-house.png'
+    }
+] 
