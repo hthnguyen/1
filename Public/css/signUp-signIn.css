@@ -1,8 +1,8 @@
     /* Full-width input fields */
 
-    #sign-up > form > div > input[type=text],
+    #sign-up > form > div > input[type=email],
     #sign-up > form > div > input[type=password],
-    #sign-in > form > div > input[type=text],
+    #sign-in > form > div > input[type=email],
     #sign-in > form > div > input[type=password]{
         width: 100%;
         padding: 16px;

@@ -85,18 +85,12 @@
                     <p>Please fill in this form to create an account.</p>
                     <hr>
                     <label for="email"><b>Email address</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="email" placeholder="Enter Email" name="email" required>
 
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required
-                        pattern="{6,12}[a-zA-Z0-9]"
-                        oninvalid="setCustomValidity('Please enter at least 1 upper case, 1 lower case and 1 digit, and the password from 6-12 character')" />
-
-                    <label for="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" placeholder="Repeat Password" name="psw-repeat"
-                        pattern="{6,12}[a-zA-Z0-9]"  
-                        oninvalid="setCustomValidity('Please enter at least 1 upper case, 1 lower case and 1 digit, and the password from 6-12 character')" />
-                     
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                        oninvalid="set('Please enter at least 1 upper case, 1 lower case, 1 digit and more than 6 characters')" />
 
                     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
                     </p>
@@ -141,7 +135,7 @@
                     <h1>Sign In</h1>
                     <hr>
                     <label for="email"><b>Email address</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="email" placeholder="Enter Email" name="email" required>
 
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>

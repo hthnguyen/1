@@ -42,18 +42,12 @@
                     <p>Please fill in this form to create an account.</p>
                     <hr>
                     <label for="email"><b>Email address</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="email" placeholder="Enter Email" name="email" required>
 
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required
-                        pattern="((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])){6,12}"
-                        oninvalid="setCustomValidity('Please enter at least 1 upper case, 1 lower case and 1 digit, and the password from 6-12 character')" />
-
-                    <label for="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" placeholder="Repeat Password" name="psw-repeat"
-                        pattern="((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])){6,12}"
-                        oninvalid="setCustomValidity('Please enter at least 1 upper case, 1 lower case and 1 digit, and the password from 6-12 character')" />
-
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                        oninvalid="set('Please enter at least 1 upper case, 1 lower case, 1 digit and more than 6 characters')" />
                     <label>
                         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
                     </label>
@@ -101,7 +95,7 @@
                     <h1>Sign In</h1>
                     <hr>
                     <label for="email"><b>Email address</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="email" placeholder="Enter Email" name="email" required>
 
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="psw" required>
