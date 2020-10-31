@@ -2,6 +2,7 @@
 
     #sign-up > form > div > input[type=email],
     #sign-up > form > div > input[type=password],
+    #sign-up > form > div > input[type=text],
     #sign-in > form > div > input[type=email],
     #sign-in > form > div > input[type=password]{
         width: 100%;

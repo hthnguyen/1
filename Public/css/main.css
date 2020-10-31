@@ -465,13 +465,13 @@ body {
 }
 
 .reasons {
-    min-height: 500px;
+    min-height: 350px;
     width: 100%;
 }
 
 .features {
     background-color: white;
-    min-height: 500px;
+    min-height: 350px;
     max-width: 1650px;
     margin: 0 auto;
 }

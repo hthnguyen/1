@@ -1,3 +1,6 @@
+
+var nameValue = document.getElementById("name_ ");
+
 var house_list = [
     {
         desc: 'Tiny House',
