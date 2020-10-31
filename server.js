@@ -32,6 +32,12 @@ app.get("/dashdoor.html", function(req,res){
     res.sendFile(path.join(__dirname,"dashdoor.html"));
 });
 
+
+app.get("/test", function(req,res){
+    res.sendFile(path.join(__dirname,"login.html"));
+});
+
+
 app.get("/guide", function(req,res){
     res.send(`<iframe src="https://docs.google.com/document/d/e/2PACX-1vSzfbRxC-O2gscGGUYA7Gf9ic_gOcVQc9q5Pd32BTbUrHh_ZRMe5UcrjZfW0B0LZ6b_uWwES5iEusVt/pub?embedded=true" style="width: 100%; height: 100%; text-align: center;"></iframe>"`);
 });
